@@ -27,10 +27,16 @@ install requirements:
  
  # Generate allure report (it will be an index.html file):
  
-`allure-behave generate allure/results/ -o allure/reports`
+First run tests:
+ 
+`behave -f allure_behave.formatter:AllureFormatter -o allure/results ./tests/features`
+
+Then generate a report file (if you already have one generated and you want a new one, use '--clean' parameter):
+
 `allure generate allure/results/ -o allure/reports`
 
-In case of troubles with generating the report on Mac - please install allure via brew - `brew install allure`
+In case of troubles with generating the report on Mac - please install allure via brew - 
+`brew install allure`
 in the command line.
  
  # Credits:
