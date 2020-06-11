@@ -22,6 +22,8 @@ view requirements:
 install requirements:
   `pip install -r requirements.txt`
   
+ You also need to have browser drivers downloaded and placed in an appropriate location, depending on your OS
+  
  # Run tests: 
  `behave tests/features`
  
